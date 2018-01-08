@@ -23,11 +23,82 @@
     <script src="js/metro.js"></script>
     <!-- <script src="js/docs.js"></script> -->
     <script src="js/prettify/run_prettify.js"></script>
+
+    <style>
+        @media screen and (max-width: 640px) {
+            .countdown {
+                font-size: 1rem !important;
+            }
+        }
+    </style>
+
 </head>
 <body>
-    <div class="container page-content">
-        <h1><a href="index.html" class=""> <img src="images/logoBunny.png" alt="logo" width="50em"> </a>Jumping Bunny <small>edu game</small> </h1>
+    <div class="page-content">
+      <div class="bg-lightBlue fg-white align-center">
+        <div class="container">
+          <div class="no-overflow" style="padding-top: 40px">
+            <br />
+            <br />
+            <br />
+            <h1 style="font-size: 4.5rem; line-height: 1" class="text-shadow metro-title text-light"><img src="images/logoBunny.png" alt="logo" width="50em"> </a>Jumping Bunny <small>edu game</small></h1>
+            <div class="padding30 sub-leader text-light">
+              An easy fun addictive educational math game, buil with love to educate childerns fon way to learn
+            </div>
 
+            <div class="margin60">
+              <div class="clear-float">
+                <a href="#"><button class="button big-button block-shadow success loading-pulse lighten" >Download Now</button></a>
+              </div>
+              <br />
+              <div class="align-center">
+
+              </div>
+            </div>
+
+            <small>
+            </small>
+
+            <div class="grid no-margin-bottom" style="margin-top: 100px" id="g1">
+              <div class="row cells3">
+                <div class="cell no-overflow" style="height: 85px">
+                  <div class="bg-yellow fg-white block-shadow" style="height: 85px; padding-top: 20px; margin-top: 85px;">
+                    <h2 class="text-light">easy to play</h2>
+                  </div>
+                </div>
+                <div class="cell no-overflow" style="height: 85px">
+                  <div class="bg-green fg-white block-shadow" style="height: 85px; padding-top: 20px; margin-top: 85px;">
+                    <h2 class="text-light">simply addictive</h2>
+                  </div>
+                </div>
+                <div class="cell no-overflow" style="height: 85px">
+                  <div class="bg-red fg-white block-shadow" style="height: 85px; padding-top: 20px; margin-top: 85px;">
+                    <h2 class="text-light">educative</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              $(function(){
+                setTimeout(function(){
+                  $("#g1 .cell > div:eq(0)").animate({
+                    'margin-top': 0
+                  }, 500, 'easeOutBounce');
+                  $("#g1 .cell > div:eq(1)").animate({
+                    'margin-top': 0
+                  }, 1000, 'easeOutBounce');
+                  $("#g1 .cell > div:eq(2)").animate({
+                    'margin-top': 0
+                  }, 1500, 'easeOutBounce');
+                }, 500);
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container page-content">
         <br><br><br>
         <hr>
         <h2 style="text-align:center">"An entertaining, simple math educational game"</h2>
